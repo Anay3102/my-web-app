@@ -35,7 +35,7 @@ pipeline {
             }
         }
 
-        stage('ECR Login') {
+        stage('ECR LOGIN') {
             steps {
                 sh '''
                     aws ecr get-login-password --region ${AWS_REGION} | \
